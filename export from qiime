@@ -1,0 +1,25 @@
+#####
+# exporting OTU, taxa, and tree from QIIME 2
+# perform on a qiime2 server using python
+#####
+
+# 1 Export OTU table from qiime as .biom
+qiime tools export \
+--input-path feature-table.qza \
+--output-path phyloseq/feature-table
+
+# 2 OTU tables exports as feature-table.biom so convert to .tsv
+biom convert \
+-i phyloseq/feature-table/feature-table.biom \
+-o phyloseq/feature-table/feature-table.tsv \
+--to-tsv
+
+# 3 Export taxonomy table
+qiime tools export \
+--input-path taxonomy_dada2.qza \
+--output-path phyloseq/taxonomy
+
+# 4 Export phylogenetic tree
+qiime tools export \
+--input-path unrooted-tree_dada2.qza \
+--output-path phyloseq/tree
