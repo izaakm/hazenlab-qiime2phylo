@@ -1,7 +1,5 @@
 # qiime2phylo
-a function that reads qiime2 output files into a phyloseq object
-
-Purpose: to read qiime2 exported files into phyloseq for use with R
+Purpose: a function that reads qiime2 output files into a phyloseq object in R
 
 Step 1: use "export from qiime2" to export otu.tsv, taxonomy.tsv, and tree.nwk
 step 2: read files into R for use with qimme2phylo
