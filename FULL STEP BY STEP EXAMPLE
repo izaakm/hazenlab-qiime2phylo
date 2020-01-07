@@ -66,13 +66,14 @@ mapping_file <- read.csv("data/micro_geochem_data_adp_2019.11.27.csv", row.names
 # df must be entered in this order: OTU, TAXA, TREE, MAPPING FILE.
 #####
 qiime2phylo <- function(qiime_OTU, qiime_TAX, qiime_tree, mapping_file) {
+  # list of packages that are required.
   list.of.packages <- c("ggplot2",
                         "phyloseq",
                         "ape",
                         "tidyverse",
                         "tidyr",
                         "magrittr")
-  
+  # automatically load all required packages if not found
   new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
   if(length(new.packages)) install.packages(new.packages)
   lapply(list.of.packages, require, character.only = TRUE)
