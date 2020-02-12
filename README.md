@@ -2,10 +2,10 @@
 
 Purpose: a function that reads qiime2 output files into a phyloseq object in R
 
-Step 1: use "export from qiime2" to export otu.tsv, taxonomy.tsv, and tree.nwk
-step 2: read files into R for use with qimme2phylo
-step 3: run qiime2phylo function
-step 4: continue analysis with phyloseq
+- Step 1: use "export from qiime2" to export otu.tsv, taxonomy.tsv, and tree.nwk
+- step 2: read files into R for use with qimme2phylo
+- step 3: run qiime2phylo function
+- step 4: continue analysis with phyloseq
 
 # read in data (step 2)
 
