@@ -32,4 +32,5 @@ qiime2phylo <- function(qiime_OTU, qiime_TAX, qiime_tree, mapping_file)
 
 - [ ] Read qza file from command line.
 - [ ] Unzip qza file. 
+- [x] Load in Phyloseq.
 
