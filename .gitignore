@@ -1,0 +1,21 @@
+*.RData
+*.Rdata
+*.rds
+__pycache__
+*.py[cod]
+
+# OS generated files #
+.AppleDouble
+.DS_Store
+.DS_Store?
+.DocumentRevisions-V100
+.LSOverride
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+._*
+.com.apple.timemachine.donotpresent
+.fseventsd
+Thumbs.db
+ehthumbs.db
