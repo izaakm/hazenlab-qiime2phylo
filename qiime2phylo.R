@@ -7,6 +7,17 @@
 # A. Putt   07 January 2020  U. Tennessee
 #####
 
+
+# 1. Read qza file and unzip
+
+# 2. Load data from unzipped qza file.
+# qiime_OTU <- read.csv ("data/feature-table1.tsv", sep = "\t", header = FALSE, stringsAsFactors = FALSE)
+# qiime_TAX <- read.csv ("data/taxonomy.tsv", sep = "\t", header = FALSE)
+# qiime_tree <- read_tree("data/tree.nwk") # this requires phyloseq to be installed
+# mapping_file <- read.csv("data/meta_mapping.csv", row.names = 1, sep = ",")
+
+
+# 3. Load data into phyloseq.
 qiime2phylo <- function(qiime_OTU, qiime_TAX, qiime_tree, mapping_file) {
   list.of.packages <- c("ggplot2",
                         "phyloseq",
