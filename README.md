@@ -20,4 +20,8 @@ qiime2phylo <- function(qiime_OTU, qiime_TAX, qiime_tree, mapping_file)
 
 # output: physeq object which can be imported into phyloseq (https://github.com/joey711/phyloseq).
 
+# output pcoa
 
+# output alpha and beta diversity
+
+# output ancom simulation
